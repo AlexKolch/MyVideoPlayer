@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC29B5042D049CCB004BECE7 /* SDE.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = FC29B5032D049CCB004BECE7 /* SDE.MP4 */; };
 		FCC73E352D0495760091FAFE /* MyVideoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC73E342D0495760091FAFE /* MyVideoPlayerApp.swift */; };
 		FCC73E372D0495760091FAFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC73E362D0495760091FAFE /* ContentView.swift */; };
 		FCC73E392D0495770091FAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC73E382D0495770091FAFE /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC29B5032D049CCB004BECE7 /* SDE.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDE.MP4; sourceTree = "<group>"; };
 		FCC73E312D0495760091FAFE /* MyVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC73E342D0495760091FAFE /* MyVideoPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideoPlayerApp.swift; sourceTree = "<group>"; };
 		FCC73E362D0495760091FAFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 		FCC73E282D0495760091FAFE = {
 			isa = PBXGroup;
 			children = (
+				FC29B5032D049CCB004BECE7 /* SDE.MP4 */,
 				FCC73E332D0495760091FAFE /* MyVideoPlayer */,
 				FCC73E322D0495760091FAFE /* Products */,
 			);
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC29B5042D049CCB004BECE7 /* SDE.MP4 in Resources */,
 				FCC73E3C2D0495770091FAFE /* Preview Assets.xcassets in Resources */,
 				FCC73E392D0495770091FAFE /* Assets.xcassets in Resources */,
 			);

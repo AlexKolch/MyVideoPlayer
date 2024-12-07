@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         GeometryReader(content: { geometry in
+            //размеры родительской вью
             let size = geometry.size
             let safeArea = geometry.safeAreaInsets
             
