@@ -18,6 +18,7 @@ struct MainView: View {
     
     @State private var showControls = false
     @State private var isPlaying = false
+    @State private var timeoutTask: DispatchWorkItem?
     
     let size: CGSize
     let safeArea: EdgeInsets
@@ -65,12 +66,23 @@ struct MainView: View {
                     .background {
                         Circle().fill(.black.opacity(0.4))
                     }
-            })
+            }).disabled(true)
+                .opacity(0.6)
             
             Button(action: {
-                
+                switch isPlaying {
+                case true:
+                    player?.pause()
+                    if let timeoutTask {
+                        timeoutTask.cancel() //отменяем чтобы не скрывались контролы
+                    }
+                case false:
+                    player?.play()
+                    hideControls()
+                }
+                isPlaying.toggle()
             }, label: {
-                Image(systemName: "play.fill")
+                Image(systemName: isPlaying ? "pause.fill" : "play.fill")
                     .font(.title)
                     .fontWeight(.ultraLight)
                     .foregroundStyle(.white)
@@ -91,8 +103,25 @@ struct MainView: View {
                     .background {
                         Circle().fill(.black.opacity(0.4))
                     }
-            })
+            }).disabled(true)
+                .opacity(0.6)
         })
+    }
+    
+    func hideControls() {
+        if let timeoutTask {
+            timeoutTask.cancel()
+        }
+        
+        timeoutTask = DispatchWorkItem(block: {
+            withAnimation {
+                showControls = false
+            }
+        })
+        
+        if let timeoutTask {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.8, execute: timeoutTask)
+        }
     }
 }
 

@@ -10,15 +10,15 @@
 				<key>location-parameters</key>
 				<dict>
 					<key>EndingColumnNumber</key>
-					<string>38</string>
+					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>31</string>
+					<string>33</string>
 					<key>StartingColumnNumber</key>
-					<string>11</string>
+					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>31</string>
+					<string>32</string>
 					<key>Timestamp</key>
-					<string>755279855.0688781</string>
+					<string>755350333.693794</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -34,15 +34,16 @@
 			<key>text-context</key>
 			<dict>
 				<key>focused</key>
-				<string>         //setting controls</string>
+				<string>                    //setting controls
+</string>
 				<key>leading</key>
 				<string>                if let player {
                     VideoPlayer(player: player)
-           </string>
+</string>
 				<key>trailing</key>
-				<string>
-                        .overlay {
+				<string>                        .overlay {
                             Rectangle()
+                                .fill(.black.opacity(0.4))
 </string>
 			</dict>
 			<key>title</key>
